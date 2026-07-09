@@ -15,7 +15,7 @@ ver=$VERSION_ID
 
 # // Domain
 domain=$(cat /root/domain)
-websc=https://raw.githubusercontent.com/zakiii20211/NINJA/main
+websc=https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main
 
 # // detail nama perusahaan
 country=MY
