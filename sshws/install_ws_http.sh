@@ -26,8 +26,8 @@ fi
 # --- Install Mode ---
 clear
 echo "=============================================="
-echo "   Python WS-HTTP Proxy Installer (Debian 13) "
-echo "             Script By KhaiVPN                "
+echo " Python WS-HTTP Proxy Installer (Debian 13) "
+echo " Script By KhaiVPN "
 echo "=============================================="
 echo ""
 
@@ -223,16 +223,16 @@ echo "[+] Enabling service..."
 systemctl enable ws-http.service
 
 echo "[+] Starting service..."
-systemctl restart ws-http.service
+systemctl start ws-http.service
 
 echo ""
 echo "=============================================="
 echo " Installation Completed!"
-echo " Listening Port  : $PORT"
-echo " Service Name    : ws-http"
-echo " Start Service   : systemctl start ws-http"
-echo " Stop Service    : systemctl stop ws-http"
-echo " Status Check    : systemctl status ws-http"
+echo " Listening Port : $PORT"
+echo " Service Name : ws-http"
+echo " Start Service : systemctl start ws-http"
+echo " Stop Service : systemctl stop ws-http"
+echo " Status Check : systemctl status ws-http"
 echo "=============================================="
 echo ""
 echo "To uninstall: bash install_ws_http.sh uninstall"
