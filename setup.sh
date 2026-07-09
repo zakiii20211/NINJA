@@ -109,7 +109,7 @@ echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
 sysctl -p
 clear
 
-websc=https://raw.githubusercontent.com/zakiii20211/NINJA/main
+websc=https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main
 #install ssh 
 echo -e "============================================="
 echo -e " ${green} INSTALLING SSH ${NC}"
