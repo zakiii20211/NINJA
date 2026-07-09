@@ -17,16 +17,14 @@ chronyc sourcestats -v
 chronyc tracking -v
 date
 
-
 # / / Ambil Xray Core Version Terbaru
 latest_version="$(curl -s https://api.github.com/repos/XTLS/Xray-core/releases | grep tag_name | sed -E 's/.*"v(.*)".*/\1/' | head -n 1)"
 
 # / / Installation Xray Core
-xraycore_link="https://raw.githubusercontent.com/zakiii20211/NINJA/main/xray/core/v25.10.15.3/xray.linux.zip"
+xraycore_link="https://raw.githubusercontent.com/zakiii20211/NINJA/main/xray/core/CUSTOM%20CORE%2025.10.15.3/xray.linux.zip"
 
 # / / Make Main Directory
 mkdir -p /usr/bin/xray
-
 
 # / / Unzip Xray Linux 64
 cd `mktemp -d`
@@ -594,9 +592,6 @@ systemctl daemon-reload
 systemctl enable xray@xhttp
 systemctl start xray@xhttp
 systemctl restart xray@xhttp
-
-
-
 
 cd /usr/local/bin
 wget -O mxray "https://raw.githubusercontent.com/zakiii20211/NINJA/main/xray/mxray.sh"
