@@ -27,7 +27,7 @@ commonname=jinggo.xyz
 email=jinggovpn@gmail.com
 
 # // simple password minimal
-wget -O /etc/pam.d/common-password "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/password"
+wget -O /etc/pam.d/common-password "https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/menu/password"
 chmod +x /etc/pam.d/common-password
 
 # // go to root
@@ -298,7 +298,7 @@ apt -y install fail2ban
 #wget https://data.jinggo.eu.org/script/sshovpn/install-ddos.sh && chmod +x install-ddos.sh && ./install-ddos.sh
 
 # banner /etc/issue.net
-wget -O /etc/issue.net "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/issue.net"
+wget -O /etc/issue.net "https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/menu/issue.net"
 echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
@@ -307,28 +307,28 @@ sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dr
 cd /usr/local/bin
 
 # // menu ssh-ovpn
-wget -O mssh "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/mssh.sh"
-wget -O delete "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/delete.sh" 
+wget -O mssh "https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/menu/mssh.sh"
+wget -O delete "https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/menu/delete.sh" 
 # // menu system
-wget -O add-host "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/add-host.sh"
-wget -O speedtest "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/speedtest_cli.py"
-wget -O restart-service "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/restart-service.sh"
-wget -O ram "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/ram.sh"
-wget -O info "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/info.sh"
-wget -O nf "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/nf.sh"
-wget -O mdns "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/mdns.sh"
-wget -O status "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/status.sh"
-wget -O update "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/update.sh"
+wget -O add-host "https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/menu/add-host.sh"
+wget -O speedtest "https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/menu/speedtest_cli.py"
+wget -O restart-service "https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/menu/restart-service.sh"
+wget -O ram "https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/menu/ram.sh"
+wget -O info "https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/menu/info.sh"
+wget -O nf "https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/menu/nf.sh"
+wget -O mdns "https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/menu/mdns.sh"
+wget -O status "https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/menu/status.sh"
+wget -O update "https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/menu/update.sh"
 
 
 # menu
-wget -O menu "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/menu.sh"
-wget -O mwarp "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/mwarp.sh"
+wget -O menu "https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/menu/menu.sh"
+wget -O mwarp "https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/menu/mwarp.sh"
 
 
 # // xpired
-wget -O clear-log "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/clear-log.sh"
-wget -O clearcache "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/clearcache.sh"
+wget -O clear-log "https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/menu/clear-log.sh"
+wget -O clearcache "https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/menu/clearcache.sh"
 
 chmod +x mssh
 chmod +x delete
