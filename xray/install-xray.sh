@@ -4,7 +4,7 @@ NC='\033[0m'
 GREEN='\033[0;32m'
 # V2Ray Mini Core Version 4.42.2
 domain=$(cat /etc/xray/domain)
-websc=https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main
+websc=https://raw.githubusercontent.com/zakiii20211/NINJA/main
 
 apt install python3 -y
 apt install cron bash-completion ntpdate -y
@@ -22,7 +22,7 @@ date
 latest_version="$(curl -s https://api.github.com/repos/XTLS/Xray-core/releases | grep tag_name | sed -E 's/.*"v(.*)".*/\1/' | head -n 1)"
 
 # / / Installation Xray Core
-xraycore_link="https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/xray/core/v25.10.15.3/xray.linux.zip"
+xraycore_link="https://raw.githubusercontent.com/zakiii20211/NINJA/main/xray/core/v25.10.15.3/xray.linux.zip"
 
 # / / Make Main Directory
 mkdir -p /usr/bin/xray
@@ -599,9 +599,9 @@ systemctl restart xray@xhttp
 
 
 cd /usr/local/bin
-wget -O mxray "https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/xray/mxray.sh"
-wget -O delexp "https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/xray/delexp.sh"
-wget -O mport "https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/xray/mport.sh"
+wget -O mxray "https://raw.githubusercontent.com/zakiii20211/NINJA/main/xray/mxray.sh"
+wget -O delexp "https://raw.githubusercontent.com/zakiii20211/NINJA/main/xray/delexp.sh"
+wget -O mport "https://raw.githubusercontent.com/zakiii20211/NINJA/main/xray/mport.sh"
 
 chmod +x mxray
 chmod +x delexp
