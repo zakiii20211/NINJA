@@ -109,13 +109,13 @@ echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
 sysctl -p
 clear
 
-websc=https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main
+websc=https://raw.githubusercontent.com/zakiii20211/NINJA/main
 #install ssh 
 echo -e "============================================="
 echo -e " ${green} INSTALLING SSH ${NC}"
 echo -e "============================================="
 sleep 2
-wget https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/sshws/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/zakiii20211/NINJA/main/sshws/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 sleep 2
 clear
 
@@ -124,7 +124,7 @@ echo -e "============================================="
 echo -e " ${green} INSTALLING SSH WS  ${NC}"
 echo -e "============================================="
 sleep 2
-wget https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/sshws/install_ws_http.sh && chmod +x install_ws_http.sh  
+wget https://raw.githubusercontent.com/zakiii20211/NINJA/main/sshws/install_ws_http.sh && chmod +x install_ws_http.sh  
 sleep 2
 clear
 
@@ -134,7 +134,7 @@ echo -e "============================================="
 echo -e " ${green} INSTALLING XRAY${NC} "
 echo -e "============================================="
 sleep 2
-wget https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/xray/install-xray.sh && chmod +x install-xray.sh && ./install-xray.sh
+wget https://raw.githubusercontent.com/zakiii20211/NINJA/main/xray/install-xray.sh && chmod +x install-xray.sh && ./install-xray.sh
 sleep 2
 clear
 
