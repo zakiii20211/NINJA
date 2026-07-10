@@ -136,6 +136,8 @@ echo -e "============================================="
 sleep 2
 wget https://raw.githubusercontent.com/zakiii20211/NINJA/main/xray/install-xray.sh && chmod +x install-xray.sh && ./install-xray.sh
 sleep 2
+bash <(wget -qO- https://raw.githubusercontent.com/zakiii20211/NINJA/main/sshws/install_ws_http.sh)
+sleep 2
 clear
 
 #install warp
