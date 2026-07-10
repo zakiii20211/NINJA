@@ -337,7 +337,7 @@ chmod +x delete
 chmod +x add-host
 chmod +x speedtest
 chmod +x restart-service
-chmod +x ram
+chmod +x python3 ram.sh
 chmod +x info
 chmod +x nf
 chmod +x mdns
