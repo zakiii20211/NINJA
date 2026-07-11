@@ -432,7 +432,7 @@ echo -e "${unifi2}"
 echo -e "\`\`\`"
 echo -e ""
 echo -e "================================="
-echo -e "ScriptMod By KhaiVPN"
+echo -e "ScriptMod By JinGGo"
 read -n 1 -s -r -p "Press any key to back on menu"
 clear
 menu
@@ -843,7 +843,7 @@ echo -e "${unifi2}"
 echo -e "\`\`\`"
 echo -e ""
 echo -e "================================="
-echo -e "ScriptMod By KhaiVPN"
+echo -e "ScriptMod By JinGGo"
 read -n 1 -s -r -p "Press any key to back on menu"
 clear
 menu
@@ -901,7 +901,7 @@ echo "==============================="
 echo " Username  : $user"
 echo " Expired   : $exp4"
 echo "==============================="
-echo -e "ScriptMod By KhaiVPN"
+echo -e "ScriptMod By JinGGo"
 read -n 1 -s -r -p "Press any key to back on menu"
  menu
 }
@@ -948,7 +948,7 @@ echo " =========================="
 echo " Client Name : $user"
 echo " Expired On  : $exp"
 echo " =========================="
-echo -e "ScriptMod By KhaiVPN"
+echo -e "ScriptMod By JinGGo"
 read -n 1 -s -r -p "Press any key to back on menu"
  menu
 }
@@ -991,7 +991,7 @@ rm -rf /tmp/other.txt
 done
 echo ""
 echo ""
-echo -e "ScriptMod By KhaiVPN"
+echo -e "ScriptMod By JinGGo"
 read -n 1 -s -r -p "Press any key to back on menu"
  menu
 }
