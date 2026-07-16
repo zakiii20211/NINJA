@@ -39,6 +39,7 @@ expsc=$(curl https://raw.githubusercontent.com/zakiii20211/izinsc/main/ip | grep
 
 
 clear
+echo -e  " ${bb}═════════════════════════════════════════════════════════════════${NC}"
 echo -e  "  ${cy}IP VPS NUMBER                    : $IPVPS${NC}"
 echo -e  "  ${cy}DOMAIN                           : $DOMAIN${NC}"
 echo -e  "  ${cy}OS VERSION                       : `hostnamectl | grep "Operating System" | cut -d ' ' -f5-`"${NC}
