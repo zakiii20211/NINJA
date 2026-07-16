@@ -60,7 +60,7 @@ echo -e  " ${bb}[ 04 ]${NC} CHANGE DNS SERVER          ${bb}[ 10 ]${NC} STREAM G
 echo -e  " ${bb}[ 05 ]${NC} RESTART ALL SERVICE        ${bb}[ 11 ]${NC} ERVICE/PORT INFORMATION"
 echo -e  " ${bb}[ 06 ]${NC} CHECK RAM USAGE            ${bb}[ 12 ]${NC} SERVICE STATUS"
 echo -e  " ${bb}[ 07 ]${NC} REBOOT VPS                 ${bb}[ 13 ]${NC} SOCKS WRAP                " 
-echo -e  " ${bb}[ 08 ]${NC} UPDATE"             
+echo -e  " ${bb}[ 08 ]${NC} UPDATE                     ${bb}[ 14 ]${NC} autobackup"             
 echo -e  " ${bb}═════════════════════════════════════════════════════════════════${NC}" 
 echo -e  " ${bb}[  0 ]${NC}" "${cy}EXIT MENU${NC}  "
 echo -e  " ${bb}═════════════════════════════════════════════════════════════════${NC}"
@@ -112,6 +112,9 @@ echo -e "\e[0m"
   ;;
   13)
   clear ; mwarp
+  ;;
+  14)
+  clear ; autobackup
   ;;
   0)
   sleep 0.5
