@@ -30,8 +30,25 @@ add_user() {
             add_user
 		fi
 	done
-uuid=$(cat /proc/sys/kernel/random/uuid)
+	
+# === PILIH UUID ===
+echo -e ""
+echo -e "Pilih UUID untuk akaun $user:"
+echo -e "1. Generate UUID Random Baru"
+echo -e "2. Isi UUID Lama/Sendiri"
+read -p "Pilihan [1-2]: " pilih_uuid
+echo ""
+
+if [[ $pilih_uuid == "2" ]]; then
+	read -p "Masukkan UUID Lama: " uuid
+else
+	uuid=$(cat /proc/sys/kernel/random/uuid)
+	echo "UUID Baru: $uuid"
+fi
+# === HABIS PILIH UUID ===
+
 read -p "Expired (days): " masaaktif
+created=`date +%Y-%m-%d` # <--- TAMBAH 1
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 read -p "SNI (bug) : " sni
 read -p "PATH (EXP : wss://bug.com /Press Enter If Only Use Default) : " wss
@@ -128,6 +145,7 @@ echo -e "================================="
 echo -e "   XRAY VLESS WS & XTLS       " 
 echo -e "================================="
 echo -e "Remarks             : ${user}"
+echo -e "Created             : $created"
 echo -e "Expired On          : $exp"
 echo -e "IP/Host             : ${MYIP}"
 echo -e "Domain              : ${domain}"
@@ -432,6 +450,13 @@ echo -e "${unifi2}"
 echo -e "\`\`\`"
 echo -e ""
 echo -e "================================="
+echo -e "================================="
+echo -e "Remarks    : ${user}"
+echo -e "Created    : $created" # <--- TAMBAH 2
+echo -e "Expired On : $exp"
+echo -e "IP/Host    : ${MYIP}"
+echo -e "Domain     : ${domain}"
+echo -e "================================="
 echo -e "ScriptMod By khaiVPN"
 read -n 1 -s -r -p "Press any key to back on menu"
 clear
@@ -443,6 +468,21 @@ trial_user() {
 uuid=$(cat /proc/sys/kernel/random/uuid)
 user=TRIALvless-`</dev/urandom tr -dc X-Z0-9 | head -c4`
 duration=1
+# === PILIH UUID ===
+echo -e ""
+echo -e "Pilih UUID untuk akaun $user:"
+echo -e "1. Generate UUID Random Baru"
+echo -e "2. Isi UUID Lama/Sendiri"
+read -p "Pilihan [1-2]: " pilih_uuid
+echo ""
+
+if [[ $pilih_uuid == "2" ]]; then
+	read -p "Masukkan UUID Lama: " uuid
+else
+	uuid=$(cat /proc/sys/kernel/random/uuid)
+	echo "UUID Baru: $uuid"
+fi
+# === HABIS PILIH UUID ===
 exp=`date -d "$duration days" +"%Y-%m-%d"`
 read -p "SNI (bug) : " sni
 read -p "PATH (EXP : wss://bug.com /Press Enter If Only Use Default) : " wss
@@ -539,6 +579,7 @@ echo -e "================================="
 echo -e "   XRAY VLESS WS & XTLS       " 
 echo -e "================================="
 echo -e "Remarks             : ${user}"
+echo -e "Created             : $created"
 echo -e "Expired On          : $exp"
 echo -e "IP/Host             : ${MYIP}"
 echo -e "Domain              : ${domain}"
@@ -842,6 +883,13 @@ echo -e "\`\`\`"
 echo -e "${unifi2}"
 echo -e "\`\`\`"
 echo -e ""
+echo -e "================================="
+echo -e "================================="
+echo -e "Remarks    : ${user}"
+echo -e "Created    : $created" # <--- TAMBAH 2
+echo -e "Expired On : $exp"
+echo -e "IP/Host    : ${MYIP}"
+echo -e "Domain     : ${domain}"
 echo -e "================================="
 echo -e "ScriptMod By khaiVPN"
 read -n 1 -s -r -p "Press any key to back on menu"
