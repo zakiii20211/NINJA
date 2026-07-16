@@ -39,36 +39,36 @@ expsc=$(curl https://raw.githubusercontent.com/zakiii20211/izinsc/main/ip | grep
 
 
 clear
-echo -e  " ${bb}═════════════════════════════════════════════════════════════════${NC}"
+echo -e  " ${red}═════════════════════════════════════════════════════════════════${NC}"
 echo -e  "  ${cy}IP VPS NUMBER                    : $IPVPS${NC}"
 echo -e  "  ${cy}DOMAIN                           : $DOMAIN${NC}"
 echo -e  "  ${cy}OS VERSION                       : `hostnamectl | grep "Operating System" | cut -d ' ' -f5-`"${NC}
 echo -e  "  ${cy}KERNEL VERSION                   : `uname -r`${NC}"
 echo -e  "  ${cy}XRAY CORE VERSION                : $xcore${NC}"
 echo -e  "  ${cy}EXP DATE CERT XRAY               : $expxray${NC}"
-echo -e  " ${bb}═════════════════════════════════════════════════════════════════${NC}"
+echo -e  " ${red}═════════════════════════════════════════════════════════════════${NC}"
 echo -e  " "   "         " ${cy}TOTAL SSH : ${NC}" [$usrovpn]" ${cy}TOTAL XRAY : ${NC}" [$usrvl]"
-echo -e  " ${bb}═════════════════════════════════════════════════════════════════${NC}"
+echo -e  " ${red}═════════════════════════════════════════════════════════════════${NC}"
 echo -e  " \033[30;5;47m                         ⇱ VPN MENU ⇲                            \033[m"
-echo -e  " ${bb}═════════════════════════════════════════════════════════════════${NC} "
+echo -e  " ${red}═════════════════════════════════════════════════════════════════${NC} "
 echo -e  " ${bb}[ 01 ]${NC} MENU SSH                   ${bb}[ 02 ]${NC} MENU XRAY VLESS"
-echo -e  " ${bb}═════════════════════════════════════════════════════════════════${NC} "
+echo -e  " ${red}═════════════════════════════════════════════════════════════════${NC} "
 echo -e  " \033[30;5;47m                         ⇱ SYSTEM MENU ⇲                         \033[m"      
-echo -e  " ${bb}═════════════════════════════════════════════════════════════════${NC} "
+echo -e  " ${red}═════════════════════════════════════════════════════════════════${NC} "
 echo -e  " ${bb}[ 03 ]${NC} ADD/CHANGE DOMAIN VPS      ${bb}[ 09 ]${NC} SPEEDTEST VPS"
 echo -e  " ${bb}[ 04 ]${NC} CHANGE DNS SERVER          ${bb}[ 10 ]${NC} STREAM GEO LOCATION"
 echo -e  " ${bb}[ 05 ]${NC} RESTART ALL SERVICE        ${bb}[ 11 ]${NC} ERVICE/PORT INFORMATION"
 echo -e  " ${bb}[ 06 ]${NC} CHECK RAM USAGE            ${bb}[ 12 ]${NC} SERVICE STATUS"
 echo -e  " ${bb}[ 07 ]${NC} REBOOT VPS                 ${bb}[ 13 ]${NC} SOCKS WRAP                " 
 echo -e  " ${bb}[ 08 ]${NC} UPDATE                     ${bb}[ 14 ]${NC} autobackup"             
-echo -e  " ${bb}═════════════════════════════════════════════════════════════════${NC}" 
+echo -e  " ${red}═════════════════════════════════════════════════════════════════${NC}" 
 echo -e  " ${bb}[  0 ]${NC}" "${cy}EXIT MENU${NC}  "
-echo -e  " ${bb}═════════════════════════════════════════════════════════════════${NC}"
-echo -e  " ${bb}══════════════════════════════════${NC}"
+echo -e  " ${red}═════════════════════════════════════════════════════════════════${NC}"
+echo -e  " ${red}══════════════════════════════════${NC}"
 echo -e  " ${cy}SCRIPT VERSION :${NC} PREMIUM "
 echo -e  " ${cy}USED BY        :${NC} $pass"
 echo -e  " ${cy}EXPIRED ON     :${NC} $expsc"
-echo -e  " ${bb}══════════════════════════════════${NC}"
+echo -e  " ${red}══════════════════════════════════${NC}"
 echo -e  "  "
 echo -e "\e[1;31m"
 read -p  "     Please select an option :  " mnu
@@ -114,7 +114,7 @@ echo -e "\e[0m"
   clear ; mwarp
   ;;
   14)
-  clear ; autobackup
+  clear ; wget -q -O /usr/bin/autobackup https://raw.githubusercontent.com/huaweipadu/script-lite/main/system/backupBot.sh && chmod +x /usr/bin/autobackup && autobackup
   ;;
   0)
   sleep 0.5
