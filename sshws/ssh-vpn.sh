@@ -312,15 +312,14 @@ wget -O delete "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/de
 # // menu system
 wget -O add-host "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/add-host.sh"
 wget -O speedtest "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/speedtest_cli.py"
-wget -O restart-service "https://cdn.jsdelivr.net/gh/zakiii20211/NINJA@main/menu/restart-service.sh"
-wget -O ram "apt update -y && apt install -y python3
-rm ram.sh*
-wget https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/ram.sh"
+wget -O restart-service "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/restart-service.sh"
+wget -O ram "https://raw.githubusercontent.com/zakiii20211/Multiport/main/SSH/ram.sh"
 wget -O info "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/info.sh"
 wget -O nf "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/nf.sh"
 wget -O mdns "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/mdns.sh"
 wget -O status "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/status.sh"
 wget -O update "https://raw.githubusercontent.com/zakiii20211/NINJA/main/menu/update.sh"
+wget -O backupBot "https://raw.githubusercontent.com/huaweipadu/script-lite/main/system/backupBot.sh"
 
 
 # menu
@@ -337,7 +336,7 @@ chmod +x delete
 chmod +x add-host
 chmod +x speedtest
 chmod +x restart-service
-chmod +x python3 ram.sh
+chmod +x ram
 chmod +x info
 chmod +x nf
 chmod +x mdns
@@ -345,6 +344,8 @@ chmod +x status
 chmod +x update
 chmod +x menu
 chmod +x mwarp
+chmod +x backupBot
+
 
 chmod +x clear-log
 chmod +x clearcache
