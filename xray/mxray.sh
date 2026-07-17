@@ -1125,13 +1125,16 @@ until [[ ${CLIENT_NUMBER} -ge 1 && ${CLIENT_NUMBER} -le ${NUMBER_OF_CLIENTS} ]];
 read -rp "Select one client [1-${NUMBER_OF_CLIENTS}]: " CLIENT_NUMBER
 done
 
-user=$(grep -E "^### " "/usr/local/etc/xray/vless.txt" | awk -v n=$CLIENT_NUMBER 'NR==n {print $2}')
-exp=$(grep -E "^### " "/usr/local/etc/xray/vless.txt" | awk -v n=$CLIENT_NUMBER 'NR==n {print $3}')
-created=$(grep -E "^### " "/usr/local/etc/xray/vless.txt" | awk -v n=$CLIENT_NUMBER 'NR==n {print $4}')
-uuid=$(grep -E "^### " "/usr/local/etc/xray/vless.txt" | awk -v n=$CLIENT_NUMBER 'NR==n {print $5}')
-sni=$(grep -E "^### " "/usr/local/etc/xray/vless.txt" | awk -v n=$CLIENT_NUMBER 'NR==n {print $6}')
-path=$(grep -E "^### " "/usr/local/etc/xray/vless.txt" | awk -v n=$CLIENT_NUMBER 'NR==n {print $7}')
-sub=$(grep -E "^### " "/usr/local/etc/xray/vless.txt" | awk -v n=$CLIENT_NUMBER 'NR==n {print $8}')
+data=$(grep -E "^### " "/usr/local/etc/xray/vless.txt" | sed -n ${CLIENT_NUMBER}p)
+jum=$(echo $data | awk '{print NF}')
+
+user=$(echo $data | awk '{print $2}')
+exp=$(echo $data | awk '{print $3}')
+created=$(echo $data | awk '{print $4}')
+uuid=$(echo $data | awk '{print $5}')
+if [[ $jum -ge 6 ]]; then sni=$(echo $data | awk '{print $6}'); else sni=$domain; fi
+if [[ $jum -ge 7 ]]; then path=$(echo $data | awk '{print $7}'); else path=""; fi  
+if [[ $jum -ge 8 ]]; then sub=$(echo $data | awk '{print $8}'); else sub=""; fi
 
 [[ -z "$sni" ]] && sni=$domain
 [[ -z "$path" ]] && path=""
@@ -1282,7 +1285,7 @@ echo -e "    SILA COPY LINK DI ATAS"
 echo -e "◇━━━━━━━━━━━━━━━━━◇"
 echo -e "TELCO :"
 echo -e "Remarks : ${user}"
-echo -e "Domain : ${domain}"
+echo -e "Domain : ${dom}"
 echo -e "AKTIF : Day"
 echo -e "Created : $created" # <--- TAMBAH 2
 echo -e "Expired : $exp"
