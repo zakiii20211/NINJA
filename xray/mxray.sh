@@ -1334,7 +1334,7 @@ echo -e  " ${bb}[ 02 ]${NC} CREATE TRIAL USER          ${bb}[ 06 ]${NC}"" LIST U
 echo -e  " ${bb}[ 03 ]${NC} EXTEND ACCOUNT ACTIVE      ${bb}[ 07 ]${NC}"" RENEW XRAY CERTIFICATION"
 echo -e  " ${bb}[ 04 ]${NC} DELETE ACTIVE USER         ${bb}[ 08 ]${NC}"" CHANGE PORT XRAY"
 echo -e  " ${bb}═════════════════════════════════════════════════════════════════${NC}" 
-echo -e  " ${bb}[ 09 ]${NC} SHOW CONFIG VLESS   "
+#echo -e  " ${bb}[ 09 ]${NC} SHOW CONFIG VLESS   "
 echo -e  " ${bb}[  0 ]${NC}" "${cy}EXIT TO MENU${NC}  "
 echo -e  " ${bb}═════════════════════════════════════════════════════════════════${NC}"
 echo -e  "  "
