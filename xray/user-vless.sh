@@ -16,9 +16,9 @@ NUMBER_OF_CLIENTS=$(wc -l < /tmp/vless.list)
 if [[ $NUMBER_OF_CLIENTS -eq 0 ]]; then echo "No Expired User"; exit 1; fi
 
 clear
-echo -e "${bb}════════${NC}"
-echo -e " ${cyan}CHECK XRAY VLESS CONFIG${bb} "
-echo -e "${bb}════════${NC}"
+echo -e " ${bb}═══════════════════════${NC} "
+echo -e " \033[30;5;47m CHECK XRAY VLESS CONFIG\033[m"
+echo -e " ${bb}═══════════════════════${NC} "
 echo ""
 i=1
 while read line; do
@@ -100,9 +100,9 @@ echo -e "\`\`"
 printf "%s\n" "$vlessgrpc"
 echo -e "\`\`"
 
-echo -e " ${bb}═══════════════${NC} "
-echo -e " \033[30;5;47m ⇱ TELCO CONFIG ⇲ \033[m"
-echo -e " ${bb}═══════════════${NC} "
+echo -e " ${bb}═══════════════════════${NC} "
+echo -e " \033[30;5;47m ⇱ TELCO CONFIG ⇲  \033[m"
+echo -e " ${bb}═══════════════════════${NC} "
 echo -e ""
 
 echo -e "${cyan}LINK VLESS DIGI BOOSTER 3MBPS :${NC} "
@@ -179,9 +179,9 @@ echo -e "    SILA COPY LINK DI ATAS"
 echo -e "◇━━━━━━━━━━━━━━━━━◇"
 echo -e "TELCO :"
 echo -e "Remarks : ${user}"
-echo -e "Domain : ${domain}"
+echo -e "Domain : ${dom}"
 echo -e "AKTIF : Day"
-echo -e "Created : $created" # <--- TAMBAH 2
+echo -e "Created : $created"
 echo -e "Expired : $exp"
 echo -e "◇━━━━━━━━━━━━━━━━━◇"
 echo -e "ID : ${uuid}"
