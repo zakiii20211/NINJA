@@ -1367,7 +1367,7 @@ echo -e "\e[0m"
    clear ; mport-xray
    ;;
   9)
-   clear ; wget -O /usr/bin/show "https://raw.githubusercontent.com/zakiii20211/NINJA/main/xray/show.sh" && chmod +x /usr/bin/show && show
+   clear ; user-vless
   ;;  
   0)
   sleep 0.5
