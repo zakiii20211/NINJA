@@ -32,7 +32,7 @@ fi
 clear
 echo -e "${bb}════════════════${NC}"
 echo -e " ${cy}CHECK XRAY VLESS CONFIG${bb} "
-echo -e "════════════════${NC}"
+echo -e "${bb}════════════════${NC}"
 echo ""
 echo " No Expired User"
 grep -E "^### " "$FILE" | cut -d ' ' -f 2-3 | nl -s ') '
@@ -127,7 +127,7 @@ echo -e "\`\`\`"
 echo -e "${vlessgrpc}"
 echo -e "\`\`\`"
 
-echo -e " ${bb}═══════════════${NC} "
+echo -e " ${bb}═══════════════════════${NC} "
 echo -e " \033[30;5;47m ⇱ TELCO CONFIG ⇲ \033[m"
 echo -e " ${bb}═══════════════════════${NC} "
 echo -e ""
