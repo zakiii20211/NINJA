@@ -597,13 +597,13 @@ cd /usr/local/bin
 wget -O mxray "https://raw.githubusercontent.com/zakiii20211/NINJA/main/xray/mxray.sh"
 wget -O delexp "https://raw.githubusercontent.com/zakiii20211/NINJA/main/xray/delexp.sh"
 wget -O mport "https://raw.githubusercontent.com/zakiii20211/NINJA/main/xray/mport.sh"
-wget -O show "https://raw.githubusercontent.com/zakiii20211/NINJA/main/xray/show.sh"
+wget -O user-vless "https://raw.githubusercontent.com/zakiii20211/NINJA/main/xray/user-vless.sh"
 
 
 chmod +x mxray
 chmod +x delexp
 chmod +x mport
-chmod +x show
+chmod +x user-vless
 
 cd
 rm -f install-xray.sh
