@@ -187,7 +187,7 @@ echo "   - SSH WEBSOCKET HTTP           : 8880"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "===================================================================="
 echo ""  | tee -a log-install.txt
-echo "   - Telegram                : t.me/jinggo007"  | tee -a log-install.txt
+echo "   - Telegram                : t.me/khaivpn"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "========================== SCRIPT BY KhaiVPN767 =====================" | tee -a log-install.txt
 echo ""
